@@ -1,5 +1,8 @@
 # A function to get bilibili cc subtitle 获取哔哩哔哩视频的cc字幕
 # created by huilongyeo on 2022/5/6
+# modified by dyingc on 2023/6/25
+# Original github: https://github.com/huilongyeo/bilibiliGetSrt.git
+
 import json
 import math
 from bs4 import BeautifulSoup
@@ -10,7 +13,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import ui
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.chrome.options import Options
-import time
+import time, sys
 import pickle
 import os.path
 import requests
@@ -66,10 +69,11 @@ def getSrtJson(bvid:str, pageNo:int=1)->dict:
           v_data0 = json.loads(body)
           
           aid = v_data0.get('data').get('aid')
+          # import ipdb; ipdb.set_trace()
           cid = v_data0.get('data').get('pages')[pageNo-1].get('cid')
         except Exception as ex:
           print(f"Error occurs while fetch aid/cid for page: {pageNo}: {ex}")
-          exit(-1)
+          sys.exit(-1)
 
         # Get subtitle URL
         url = f"https://api.bilibili.com/x/player/wbi/v2?aid={aid}&cid={cid}"
@@ -87,21 +91,24 @@ def getSrtJson(bvid:str, pageNo:int=1)->dict:
           subtitle_url = "http:" + subtitle.get('subtitle_url')
         except Exception as ex:
           print(f"Error occurs while fetch subtitle: {ex}")
-          exit(-1)
+          print(f"Number of subtitles: {len(v_data.get('data').get('subtitle').get('subtitles')):d}")
+          # import ipdb; ipdb.set_trace()
+          sys.exit(-1)
         try:
           driver.get(subtitle_url)
         except Exception as ex:
           print(f"Error fetch subtitle at: {subtitle_url}\nError message: {ex}")
-          exit(-1)
+          sys.exit(-1)
         try:
           html = driver.page_source
           soup = BeautifulSoup(html, 'html.parser')
           subtitle_json = json.loads(soup.find('body').text) # A json
           # Output to srt file
-          json_to_srt(subtitle_json, v_data.get('data').get('title'))
+          srt_file = v_data.get('data').get('title') if (v_data.get('data').get('title')!=None and v_data.get('data').get('title')!='') else v_data.get('data').get('bvid')
+          json_to_srt(subtitle_json, srt_file)
         except Exception as ex:
           print(f"Error retrieve subtitle from {subtitle_url}\nError message: {ex}")
-          exit(-1)
+          sys.exit(-1)
         
         driver.close()
 
@@ -113,12 +120,13 @@ def getSrtJson(bvid:str, pageNo:int=1)->dict:
 
         return final_result
          
-    except Exception:
-        print("invalid url")
+    except Exception as ex_outer:
+        print()
+        raise RuntimeError(f"Error: {ex_outer}")
 
-    if cc_url:
-        subtitle = requests.get(cc_url)
-        return subtitle.json(), title
+#     if cc_url:
+#         subtitle = requests.get(cc_url)
+#         return subtitle.json(), title
 
     else:
         print("find not subtitle")
