@@ -1,0 +1,32 @@
+#### Short Synopsis
+The article introduces a new generative model called DIFFUS ER, which incorporates edit-based generative processes into text generation tasks. It addresses the limitations of current text generation models and demonstrates its effectiveness in various text generation tasks.
+
+#### Key Points
+- 💡 DIFFUS ER is a generative model based on edit-based reconstruction.
+- 💡 It overcomes the limitations of current text generation models.
+- 💡 DIFFUS ER allows for edit-based generation in machine translation, summarization, and style transfer.
+- 💡 The model uses diffusion steps at the token level, incorporating Levenshtein edit operations.
+- 💡 Techniques like edit-based corruption and reconstruction processes are used to train the model.
+- 💡 DIFFUS ER outperforms autoregressive models and other non-autoregressive methods.
+- 💡 The model offers more performant, interactive, and flexible generation.
+
+
+
+#### Detailed Summary
+The article titled "DIFFUS ER: DISCRETE DIFFUSION VIA EDIT-BASED RECONSTRUCTION" introduces a new generative model called DIFFUS ER, which is based on edit-based reconstruction. The authors address the limitations of current text generation models, which lack the ability to revise existing text. DIFFUS ER aims to overcome this limitation by incorporating edit-based generative processes into text generation tasks.
+
+The dominant paradigm in text generation is autoregressive models, which generate text one token at a time. While these models have shown good performance, they are limited in their ability to revise existing text. DIFFUS ER, on the other hand, is a flexible method that allows for edit-based generation in a range of contexts, including machine translation, summarization, and style transfer.
+
+The authors draw inspiration from diffusion models, which use a Markov chain of denoising steps to generate data. They adapt this approach to the text generation paradigm by formulating a synthetic version of natural editing processes. DIFFUS ER models text generation as a series of diffusion steps at the token level, using Levenshtein edit operations such as insert, delete, keep, and replace.
+
+To train the edit-based diffusion processes, the authors introduce innovations such as edit-based corruption and reconstruction processes. They also propose techniques to improve the quality of decoding sequences, including a 2D beam search approach. The effectiveness of DIFFUS ER is demonstrated through experiments on machine translation, summarization, and text style transfer tasks. The results show that DIFFUS ER outperforms or rivals autoregressive models and other non-autoregressive methods.
+
+The authors also provide qualitative samples of the edit processes learned by the models in different settings. They analyze the relationship between edit steps and performance, as well as the training and inference speeds of DIFFUS ER. Overall, the results demonstrate the potential of edit-based generative models to offer more performant generation, greater interactivity between different models, and more flexible and controllable generation.
+
+In addition to the main results, the authors also perform ablations and analyses to further understand the behavior of DIFFUS ER. They conduct an ablation study on the decoding method, comparing greedy decoding, beam search, nucleus sampling, and 2D beam search. The results show that 2D beam search tends to perform the best, as it searches over multiple diffusion steps.
+
+The authors also analyze the relationship between the number of diffusion steps and the final BLEU score in machine translation and summarization tasks. They find that most performance gains are in the initial diffusion steps, with diminishing gains or gradual losses between 10 and 30 steps. The performance marginally decreases towards 60 steps.
+
+Furthermore, the authors provide a qualitative analysis of how text changes at every step in the summarization task. They show that DIFFUS ER learns edit processes intuitive to the task, with the majority of the summarization process involving deletion and minor edits.
+
+In conclusion, the article introduces DIFFUS ER, a new edit-based generative model for text. The model addresses the limitations of current text generation models by incorporating edit-based generative processes. The results demonstrate the effectiveness of DIFFUS ER in various text generation tasks and highlight its potential for more performant, interactive, and flexible generation.

@@ -1,0 +1,99 @@
+#### Brief Summary
+Messaging Layer Security (MLS) Protocol是一种关键建立协议，为群组聊天设置提供了高效的异步群组密钥建立，具有前向保密性和事后妥协安全性。它解决了在群组聊天设置中建立密钥的挑战，其中超过两个客户端需要就密钥达成一致，但可能不同时在线。
+
+#### Highlights
+- 🌐 MLS协议提供了一种高效且安全的方式来建立群组聊天设置的密钥。
+- 🔒 MLS协议确保了群组数据的机密性和完整性。
+- 🔄 MLS协议支持添加、更新和删除成员等操作。
+- 🌳 MLS协议使用树结构组织群组，并使用异步密钥封装机制。
+- 📜 MLS协议支持外部加入，允许新成员通过外部Commit加入群组。
+- 🔑 MLS协议的核心功能是连续群组认证密钥交换（AKE）。
+- 📨 MLS协议使用消息进行操作，如添加、更新和删除成员。
+- 🕒 MLS协议的密钥计划确保了前向保密性和真实性。
+- 🏢 MLS协议的设计保护了群组数据的机密性和完整性。
+- 📚 MLS协议使用了认证内容来确保群组内消息的机密性和真实性。
+
+### Detailed Summary
+The Messaging Layer Security (MLS) Protocol is a key establishment protocol that provides efficient asynchronous group key establishment with forward secrecy and post-compromise security for group chat settings. It addresses the challenge of establishing keys for group chat settings where more than two clients need to agree on a key but may not be online at the same time.
+
+The protocol is designed to ensure that messages are only accessible to the communicating endpoints and not to any servers involved in delivering messages. It uses end-to-end security mechanisms to protect the confidentiality and integrity of group data. The protocol is based on tree structures and uses an asynchronous key-encapsulation mechanism for tree structures.
+
+The protocol operates in the context described in the MLS architecture document, which assumes the presence of an Authentication Service (AS) for member authentication and a Delivery Service (DS) for routing MLS messages among participants. The AS is trusted, while the DS is largely untrusted. The protocol is designed to protect the confidentiality and integrity of the group data even in the face of a compromised DS.
+
+The core functionality of MLS is continuous group authenticated key exchange (AKE). It allows a group of clients to agree on a common secret value and verify the identity of other participants. The protocol provides group AKE, allowing more than two participants, and continuous group AKE, allowing the set of participants to change over time.
+
+The protocol organizes the group into epochs, which represent different states of the group. Each epoch has a distinct ratchet tree and secret tree. The ratchet tree represents the membership of the group and provides a way to authenticate each other and efficiently encrypt messages to subsets of the group. The secret tree represents shared secrets used by the members of the group for encrypting and authenticating messages.
+
+The protocol supports operations such as adding a member, updating keys, and removing a member. These operations are proposed by sending messages of the corresponding type, such as Add, Update, or Remove. The state of the group is not changed until a Commit message is sent to provide the group with fresh entropy. This ensures forward secrecy and post-compromise security of messages.
+
+The protocol also supports external joins, where a new member can join the group by means of an external Commit. This mechanism is useful when existing members don't have a KeyPackage for the new member, allowing new members to join without asking permission from existing members.
+
+In summary, the Messaging Layer Security (MLS) Protocol provides an efficient and secure way to establish keys for group chat settings. It ensures the confidentiality and integrity of group data and supports operations such as adding, updating, and removing members. The protocol is designed to protect against compromise and provides forward secrecy and post-compromise security for group communications.
+
+The article discusses the concept of ratchet trees in the context of the MLS (Messaging Layer Security) protocol. Ratchet trees are used to derive shared secrets among a group of clients and allow for efficient updates to reflect changes in the group membership. The article explains the structure and operations of ratchet trees in detail.
+
+In MLS, a group has a single linear sequence of epochs, and each epoch has its own ratchet tree. The ratchet tree describes the membership of the group in a particular epoch and provides public-key encryption keys that can be used to encrypt messages to subsets of the group. The tree consists of nodes, with each node representing either a leaf or an intermediate parent. Leaf nodes contain the public key and credential of individual members, while parent nodes represent subgroups of the overall group.
+
+The article explains that the MLS protocol supports two ways to link epochs in a group: reinitialization and branching. Reinitialization involves closing one group and creating a new group with the same members but different parameters. Branching starts a new group with a subset of the original group's participants. In both cases, a resumption pre-shared key (PSK) is derived from the previous epoch to inject entropy into the new epoch, ensuring that members entering the new epoch agree on a key if and only if they were members during the previous epoch.
+
+The article also discusses the concept of resumption PSKs, which are used to link epochs in other ways. For example, a resumption PSK from epoch n can be injected into epoch n+k, demonstrating that the members of the group at epoch n+k were also members at epoch n, regardless of any changes to their keys due to updates or commits.
+
+The protocol uses the concept of authenticated content to ensure confidentiality and authenticity of messages within the group. Handshake and application messages are framed using a common structure that provides encryption and signing. Messages can be either public or private, depending on whether they are encrypted or not. The article explains the encoding and decoding process for both public and private messages.
+
+The article also discusses the validation of leaf nodes in the ratchet tree. Leaf nodes contain the details of individual clients in the group and are signed by the respective clients. The validation process involves verifying the validity of the credential, signature, and capabilities of the leaf node. The lifetime field of the leaf node is checked to ensure that it is within the acceptable range. The article emphasizes the importance of time synchronization among clients to avoid disagreements about the validity of leaf nodes.
+
+Overall, the article provides a comprehensive overview of ratchet trees in the MLS protocol. It explains the structure and operations of the trees, as well as the encoding and decoding process for messages. The validation of leaf nodes is also discussed in detail.
+
+The article discusses the key schedule and encryption process in the Messaging Layer Security (MLS) protocol. MLS is a secure group messaging protocol that provides confidentiality, integrity, and authenticity for group communication. The key schedule is responsible for generating encryption keys and nonces used in the protocol.
+
+The key schedule in MLS is based on the Extract and Expand functions from the Key Derivation Function (KDF) for the group's chosen cipher suite. The key schedule starts with the initialization secret and commit secret for the current epoch. These secrets are combined with other information, such as the GroupContext and the previous epoch's external key pair, to derive new epoch secrets.
+
+The key schedule also includes the generation of pre-shared keys (PSKs) and resumption PSKs. PSKs can be injected into the key schedule to provide additional entropy and improve security. The PSKs are derived using the KDF and are used to authenticate members' participation in prior epochs.
+
+The key schedule generates various secrets for different purposes, such as encryption keys, exporters, and epoch authenticators. Encryption keys are derived using a sender ratchet, where each sender has their own ratchet. The ratchet generates a sequence of keys and nonces that are used to encrypt handshake and application messages.
+
+The key schedule also includes the generation of exporters, which are used to derive new secrets for use outside of MLS. Exported values are bound to the group epoch and can be used by applications for various purposes. The exporters are derived using the exporter secret from the key schedule.
+
+The article emphasizes the importance of deleting security-sensitive values as soon as they are consumed. Once a value is used to encrypt or decrypt a message, or if a key or secret derived from the value is consumed, it must be immediately deleted. This ensures forward secrecy for past messages and prevents unauthorized access to sensitive information.
+
+Overall, the key schedule in MLS plays a crucial role in generating encryption keys and nonces, as well as providing security guarantees such as forward secrecy and authenticity. The protocol's design ensures that sensitive values are deleted promptly to maintain the security of the communication.
+
+The article discusses the process of group creation and evolution in the context of the Messaging Layer Security (MLS) protocol. MLS is a secure group messaging protocol that allows multiple clients to communicate securely within a group. The article focuses on the key concepts and procedures involved in adding new clients to a group and updating the group's cryptographic state.
+
+The article begins by introducing the concept of KeyPackages, which are pre-published packages that contain public information about a user. A KeyPackage specifies the protocol version, ciphersuite, public key, and other relevant information about a client. KeyPackages are used to add clients to a group and should be unique and valid for the specified ciphersuite.
+
+The article emphasizes the importance of validating KeyPackages at various stages, such as when they are downloaded by a group member or received in an Add message. The validation process involves verifying the ciphersuite and protocol version, checking the validity of the leaf node, and verifying the signature on the KeyPackage. The article also highlights the need to ensure that the encryption key in the leaf node is different from the init key.
+
+Group creation is discussed next, with the article explaining that a group is initially created with a single member called the "creator." The creator is responsible for setting the group ID, ciphersuite, and initial extensions for the group. If the creator intends to add other members at the time of creation, they should fetch KeyPackages for the members to be added and select a ciphersuite and extensions based on the capabilities of the members.
+
+To protect against downgrade attacks, the creator must use the capabilities information in the KeyPackages to verify that the chosen version and ciphersuite are supported by all members. The article also suggests constructing group IDs in a way that minimizes the probability of generating the same ID by chance.
+
+The article then discusses the process of group evolution, which involves making changes to the group's membership or cryptographic state. This is achieved through the use of Proposals and Commits. Proposals are used to suggest changes to the group, while Commits initiate the actual state transition. The article explains that each state transition corresponds to an epoch, which is uniquely identified by an epoch value.
+
+Different types of proposals are described, including Add, Update, Remove, PreSharedKey, ReInit, ExternalInit, and GroupContextExtensions. The article provides detailed explanations of each proposal type and the steps involved in applying them to the group's ratchet tree and GroupContext.
+
+The article also discusses the validation of proposal lists in Commits, highlighting the conditions that make a list invalid. It explains that the list should not contain conflicting proposals, such as an Update and Remove for the same member, or multiple Add proposals for the same client. The article also mentions the importance of validating the ratchet tree's integrity and the need to ensure that the tree hash matches the computed value.
+
+The process of creating and processing a Commit is explained in detail, including the steps for constructing the Commit object, updating the ratchet tree and GroupContext, and deriving the necessary secrets for the new epoch. The article also discusses the different configurations of a Commit, such as an "empty" Commit, a "partial" Commit, and a "full" Commit, depending on the presence of proposals and the path field.
+
+The article concludes by discussing the process of adding new members to the group through Welcome messages. It explains that the sender of a Commit is responsible for sending a Welcome message to each new member added via Add proposals. The Welcome message contains the current state of the group and the necessary secrets for the new members to participate in the epoch initiated by the Commit. The article provides detailed steps for processing a Welcome message, including verifying the signature, validating the ratchet tree, and updating the group's state.
+
+Overall, the article provides a comprehensive overview of the key concepts and procedures involved in group creation and evolution in the MLS protocol. It covers important topics such as KeyPackages, proposal types, Commit validation, and the process of adding new members to the group. The article emphasizes the importance of security and integrity throughout the group evolution process.
+
+Messaging Layer Security (MLS) is a protocol designed to provide secure group communication. It allows multiple participants to establish a shared group key and exchange encrypted messages within the group. The protocol ensures confidentiality, integrity, and authenticity of the messages exchanged.
+
+MLS operates in epochs, which are periods of time during which the group's cryptographic state remains constant. Each epoch has a unique identifier and a set of group members. The protocol uses a ratchet tree structure to manage the group's cryptographic keys. The tree is constructed based on the group members' public keys and is used to derive encryption and signature keys for message protection.
+
+To join a group, a new member needs to obtain a KeyPackage, which contains the member's public key and other relevant information. The KeyPackage is distributed through a Delivery Service (DS), which is responsible for managing group metadata. The DS ensures that KeyPackages are securely distributed to the group members.
+
+The protocol supports different ciphersuites, which define the cryptographic algorithms used for key exchange, encryption, hashing, and signature generation. The ciphersuites are negotiated between the group members to ensure compatibility and security.
+
+MLS provides mechanisms for group members to add or remove other members from the group. These changes are proposed through Add and Remove proposals, which are then included in Commit messages. Commit messages are authenticated and encrypted using the group's shared key. The protocol ensures that all group members agree on the changes made to the group.
+
+External Commits are a mechanism for new members to join the group without requiring an existing member to issue a Commit. New members can create and issue an External Commit if they have access to the necessary information about the group's current epoch. This allows for easier onboarding of new members without relying on existing members' availability.
+
+The protocol also supports the use of extensions, which provide additional information or functionality to the protocol. Extensions can be used to negotiate parameters, provide ratchet tree information, or add new features to the protocol. The use of extensions is extensible, allowing for future enhancements and customization.
+
+MLS ensures the confidentiality of group secrets, sender data, and application messages through encryption and authentication mechanisms. It provides forward secrecy and post-compromise security by regularly updating cryptographic keys and deleting old keys. The protocol also addresses the risks of Delivery Service and Authentication Service compromise, providing guidelines for mitigating these risks.
+
+In conclusion, Messaging Layer Security (MLS) is a protocol that enables secure group communication. It provides confidentiality, integrity, and authenticity of messages exchanged within a group. The protocol uses a ratchet tree structure and supports various cryptographic algorithms. It allows for the addition and removal of group members and provides mechanisms for onboarding new members. MLS ensures the confidentiality of group secrets and provides forward secrecy and post-compromise security.

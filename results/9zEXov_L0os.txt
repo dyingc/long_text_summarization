@@ -1,0 +1,24 @@
+#### 简短摘要
+该文章讨论了制作勒索软件的简易性以及勒索软件运营的商品化。作者展示了两个勒索软件生成器Rasnet和Lockbit，以展示制作勒索软件的简单性。
+
+#### 要点
+- 💻 Rasnet生成器是一个开源工具，它生成一个Python脚本，然后使用Pi Builder将其转换为可执行文件。该生成器允许用户自定义勒索软件的各个方面，如加密类型、加密方法和自定义消息。
+- 💻 Lockbit生成器是Lockbit勒索软件组的一个泄露生成器。该生成器包括一个build.bat文件、一个密钥生成器、一个生成器和一个配置文件。build.bat文件清除生成目录，运行密钥生成器创建公钥和私钥对，然后运行生成器创建勒索软件可执行文件、解密器和DLL文件。
+- 💻 作者强调了这些生成器的易获取性，因为它们经常在GitHub等平台上泄露或公开共享。他们强调了了解勒索软件构建的重要性，以更好地防御勒索软件。
+- 💻 文章总结了两个勒索软件生成器Rasnet和Lockbit的详细演示，以说明制作勒索软件的简易性。作者解释了每个生成器中可用的自定义选项，并强调了了解勒索软件构建对于更好的防御的重要性。
+- 💻 作者强调了勒索软件攻击的严重性以及其对企业和组织的毁灭性影响。他们鼓励读者了解勒索软件及其不断发展的技术。他们还提到了即将举行的免费虚拟峰会，专家将讨论勒索软件攻击的各个方面。
+
+🔒 简而言之，该文章详细演示了两个勒索软件生成器Rasnet和Lockbit，以说明制作勒索软件的简易性。作者解释了每个生成器中可用的自定义选项，并强调了了解勒索软件构建对于更好的防御的重要性。他们还强调了勒索软件攻击的严重性，并强调了了解最新技术的必要性。
+
+### Detailed Summary
+The article discusses the ease with which ransomware can be built and the commoditization of ransomware operations. The author provides a demonstration of two ransomware builders, Rasnet and Lockbit, to showcase how simple it is to create ransomware. 
+
+The Rasnet builder is an open-source tool that generates a Python script which is then converted into an executable using Pi Builder. The builder allows users to customize various aspects of the ransomware, such as encryption type, encryption methodology, and custom messages. The author demonstrates the process of generating a payload and shows the resulting Python script. They explain how the encryption process works and the different options available for encrypting files. They also mention the key server functionality, where the ransomware generates a key during runtime and sends it to the key server for encryption. However, due to a technical issue, the author is unable to retrieve the key and decrypt the files.
+
+The Lockbit builder, on the other hand, is a leaked builder from the Lockbit ransomware group. The builder consists of a build.bat file, a key generator, a builder, and a configuration file. The build.bat file clears the build directory, runs the key generator to create public and private key pairs, and then runs the builder to create the ransomware executable, decrypter, and DLL files. The author explains the different options available in the configuration file, such as file encryption, impersonation, spreading via GPOs and PSExec, defeating event logs, and whitelisting/blacklisting folders, files, and extensions. They also mention the use of static lists of processes and services to kill in order to evade detection.
+
+The author highlights the ease with which these builders can be obtained, as they are often leaked or shared openly on platforms like GitHub. They emphasize the importance of understanding how ransomware is built in order to better defend against it. They also mention the speed and efficiency of Lockbit ransomware in encrypting and decrypting files.
+
+The article concludes by acknowledging the seriousness of ransomware attacks and the devastating impact they can have on businesses and organizations. The author encourages readers to stay informed about ransomware and its evolving techniques. They also mention an upcoming free virtual summit on ransomware, where experts will discuss various aspects of ransomware attacks.
+
+In summary, the article provides a detailed demonstration of two ransomware builders, Rasnet and Lockbit, to illustrate how easy it is to create ransomware. The author explains the customization options available in each builder and highlights the importance of understanding ransomware construction for better defense. They also emphasize the seriousness of ransomware attacks and the need to stay informed about the latest techniques.

@@ -1,0 +1,35 @@
+简要概述：
+本文讨论了使用Swagger Editor和Open API规范3.0设计和记录RESTful API的过程。作者强调了在开始开发过程之前定义API的结构和端点的重要性。他们介绍了OpenAPI规范，这是定义RESTful API的广泛使用的标准。OpenAPI规范由多个组件组成，包括路径、操作、参数和响应。作者演示了如何使用Swagger Editor定义这些组件，这是创建OpenAPI规范的流行工具之一。
+
+亮点：
+- 📝 作者介绍了OpenAPI规范，这是定义RESTful API的广泛使用的标准。
+- 🛣️ 作者演示了如何使用Swagger Editor定义API的路径和操作。
+- 📚 作者介绍了如何使用组件定义可重用的模式。
+- 📝 作者提供了定义模式和操作的详细说明。
+- 🧩 作者提供了如何从先前定义的操作中引用组件中定义的模式的示例。
+- 🚀 作者强调了Swagger Editor是创建和测试OpenAPI规范的强大工具。
+
+### Detailed Summary
+The article discusses the process of designing and documenting a RESTful API using the Swagger Editor and Open API specifications 3.0. The author emphasizes the importance of defining the API's structure and endpoints before starting the development process. They introduce the OpenAPI specification, which is a widely used standard for defining RESTful APIs. The OpenAPI specification consists of several components, including paths, operations, parameters, and responses. The author demonstrates how to define these components using the Swagger Editor, which is a popular tool for creating OpenAPI specifications.
+
+The first step in designing an API is to specify whether to use Swagger 2.0 or Open API specifications 3.0. The author chooses Open API 3.0.0 and uses the YAML editor in the Swagger Editor to design and document the API. The editor provides suggestions when the user presses control and space, and changes made are reflected on the right side of the screen. The author emphasizes the importance of indenting elements correctly, as YAML is strict with indentation.
+
+The author starts by adding basic information in the metadata using the info tag. They add the title, description, contact details, and version of the API. They also add servers, which is an array of servers that can be defined for dev, QA, and production environments. The author defines two servers for the API, devapi.com and broadapi.com.
+
+Next, the author adds paths to specify the API resources and operations. They start with the student resource and add a description for it. They then define the GET operation, which allows users to query information about students based on a provided query parameter. They specify the name of the parameter, student name, and make it mandatory by setting required to true. They also specify the schema, which is a string, and provide an example, Ajmal.
+
+The author then adds a POST operation to allow users to add a new student. They specify the request body, which contains the student information, and the response body, which contains the newly created student's ID. They also add a path parameter to allow users to retrieve a specific student using their ID.
+
+To make the API more reusable, the author uses components to define schemas that can be used across different resources and operations. They also use tags to group related resources and operations together.
+
+The article also discusses the process of defining schemas and operations in OpenAPI. The author explains that there are two approaches to defining schemas: the first approach involves defining all the details of the response and request payloads within the details of the operation, while the second approach involves using components to create reusable schemas that can be referred to from any operation. The author notes that they will first use the basic approach of defining schemas within operations before moving on to using components.
+
+The author provides an example of defining a GET operation for retrieving a list of students with a specific name. They explain that in this case, the response schema will be an array of student objects, each with properties such as student ID, name, and remarks. The author then provides a detailed explanation of how to define the schema for this operation, including specifying the type as an array and defining the properties.
+
+Next, the article discusses the process of defining a POST operation for adding a new student. The author notes that in this case, a request body in JSON format with the student object is expected. The author provides a step-by-step guide on how to define the request body, including specifying the content type and schema.
+
+The article then moves on to discussing the use of components to define reusable schemas. The author explains that schemas can be defined at the root level under the components section, and provides an example of defining two schemas: one for a single student object and one for an array of students. The author notes that once these schemas are defined, they can be referred to from any operation, rather than being defined within each operation.
+
+Finally, the article provides an example of how to refer to the schemas defined in the components section from the previously defined operations. The author notes that in the case of the GET operation, the response schema can be changed to refer to the "students" schema defined in the components section. Similarly, in the case of the POST operation, the request schema can be changed to refer to the "student" schema. The author notes that this approach makes it easier to maintain and reuse schemas across multiple operations.
+
+Overall, the article provides a clear and detailed explanation of how to design and document a RESTful API using the Swagger Editor and Open API specifications 3.0. The author emphasizes the importance of properly defining the API's structure and components using the OpenAPI specification. They explain that doing so can help ensure that the API is well-documented, easy to use, and consistent with industry standards. The article provides step-by-step instructions and examples to make it easy to follow along and understand the process. The author also notes that the Swagger Editor is a powerful tool for creating and testing OpenAPI specifications, and encourages readers to explore its features.

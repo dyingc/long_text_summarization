@@ -1,0 +1,22 @@
+#### Short Synopsis
+The article discusses the new function calling capability in OpenAI's GPT-3.5 and GPT-4 models, which allows programmers to add intelligence and AI capabilities to their programming. It explains how this feature can be used to extract structured data, automate the generation of terminal commands, and generate responses with different personalities.
+
+#### Key Points
+- 💡 The function calling capability in GPT-3.5 and GPT-4 enables programmers to add intelligence and AI capabilities to their programming.
+- 💻 Programmers can use this feature to extract structured data from user inputs and perform specific functions based on that data.
+- 🌦️ The function calling capability can be used to retrieve weather data based on a user's location.
+- 📝 It can also automate the process of generating terminal commands by directly retrieving a list of commands.
+- 😄 Programmers can define different personality parameters to instruct GPT-4 to respond in different ways.
+
+### Detailed Summary
+The article discusses a new function calling capability in OpenAI's GPT-3.5 and GPT-4 models, which allows programmers to add intelligence and AI capabilities to their programming. The author believes that this new feature will bring about a massive change in programming and the intersection of programming and AI.
+
+The article begins by explaining the limitations of previous AI language models when it comes to providing real-time information or performing specific tasks like pulling weather data. While GPT-4 cannot directly access the internet or scrape data, programmers can now use the function calling capability to extract structured data from user inputs and perform specific functions based on that data.
+
+The author provides examples to demonstrate how the function calling capability works. In the first example, the author shows how to use the function calling capability to extract weather data based on a user's location. By describing the function and its parameters, programmers can pass structured data to GPT-4 and have it perform specific tasks like retrieving weather information. The author emphasizes the importance of providing a clear and descriptive function description to achieve better results.
+
+Next, the author discusses how the function calling capability can be used to automate the process of generating terminal commands. Instead of manually parsing the output of GPT-4 to extract commands, programmers can now use the function calling capability to directly retrieve a list of commands. The author provides an example where the prompt asks how to install TensorFlow on a GPU, and GPT-4 responds with a list of commands to achieve that. The author notes that the description of the function could be improved to better align with how GPT-4 has been trained.
+
+The article also highlights the ability to use the function calling capability to generate responses with different personalities. By defining different personality parameters, programmers can instruct GPT-4 to respond in different ways, such as sassy and sarcastic or happy and helpful. The author demonstrates how to use the function calling capability to extract responses with different personalities based on a user's query.
+
+Overall, the article emphasizes the power and potential of the function calling capability in GPT-3.5 and GPT-4. It allows programmers to extract structured data from user inputs and perform specific functions based on that data. The author encourages readers to explore the possibilities of this new feature and suggests that it will lead to innovative applications and advancements in programming and AI.

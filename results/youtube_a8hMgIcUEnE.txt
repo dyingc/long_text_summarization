@@ -1,0 +1,37 @@
+📚 In this video, the author explores the use of OpenAI functions for extracting structured data from a large language model. LangChain has added functionality to obtain JSON output from the language model.
+
+🔖 The author introduces the concept of tagging, which involves classifying input into different categories like sentiment, stars, and language.
+
+- 🏷️ To create a tagging chain, the author uses the GPT 3.5 turbo model and defines a schema specifying the desired classifications.
+- 📝 The author explains the prompt template used in the tagging chain, which includes a human template and a function's role.
+- 🌟 The author demonstrates the tagging functionality using book reviews and shows how to refine the schema for accurate identification.
+
+🔍 The author then introduces the concept of extraction, which involves extracting specific information from a passage, such as named entity recognition (NER).
+
+- 📌 To create an extraction chain, the author uses the create extraction chain function and defines a schema for the desired entities.
+- 📜 The author explains the prompt template used in the extraction chain and examines the output, suggesting ways to improve extraction accuracy.
+
+💡 In conclusion, the author highlights the versatility of OpenAI functions for extracting structured data and encourages further exploration and experimentation for various applications.
+
+#### Detailed Summary
+In this video, the author explores the use of OpenAI functions for extracting structured data from a large language model. The author explains that this functionality has been added to LangChain, making it easier to obtain JSON output from the language model. The author introduces the concept of tagging, which is similar to classification in traditional machine learning. The tagging process involves classifying input into different categories, such as sentiment, stars, and language.
+
+The author demonstrates how to create a tagging chain using the GPT 3.5 turbo model. They define a schema that specifies the classifications they want to perform. In this case, they choose sentiment, stars, and language. The author explains that the schema is passed into the create tagging chain function along with the language model. They also set the temperature to zero to ensure deterministic output.
+
+The author provides a detailed explanation of the prompt template used in the tagging chain. They point out that it is a chat model and that the prompt template includes a human template and a function's role. The schema information is passed into the function's role, which allows the model to perform the desired classifications.
+
+To demonstrate the tagging functionality, the author uses reviews from a book called "Spare." They pass in different reviews with varying sentiments and observe the output. The author notes that the model successfully classifies the sentiment and stars in most cases but fails to identify the language.
+
+To address this issue, the author suggests refining the schema by specifying the possible values for each classification. They also introduce an enum for the language classification to ensure accurate identification. By making these changes, the author shows that the model now correctly identifies the sentiment, stars, and language in the reviews.
+
+Next, the author introduces the concept of extraction, which involves extracting specific information from a passage. They explain that extraction can be used for tasks like named entity recognition (NER). The author demonstrates how to create an extraction chain using the create extraction chain function.
+
+The author provides an example using a TechCrunch article about the controversy surrounding Reddit's CEO. They define a schema for extracting person names, startup names, news outlets, app names, and months. The author notes that the person name and startup are required fields. They run the extraction chain on the article and observe the output.
+
+The author explains the prompt template used in the extraction chain, which instructs the model to extract relevant entities mentioned in the passage. They highlight that the extraction is performed in a zero-shot manner, without providing any examples of the entities to extract.
+
+The author examines the output of the extraction chain and identifies the entities that were successfully extracted. They note that the model correctly identifies some entities, such as person names and startup names, but struggles with others, like news outlets and months.
+
+To improve the extraction, the author suggests limiting the amount of text processed at once or providing in-context learning examples. They also recommend adding descriptions to the schema to help the model better understand the entities to extract.
+
+In conclusion, the author highlights the versatility of the OpenAI functions for extracting structured data from unstructured text. They emphasize the potential applications, such as building apps, storing data in knowledge graphs, and using the extracted information as input for other tasks. The author encourages further exploration and experimentation with the OpenAI functions to leverage their capabilities effectively.

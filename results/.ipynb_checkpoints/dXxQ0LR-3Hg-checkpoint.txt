@@ -1,0 +1,24 @@
+#### 简短概要
+本文是一个教程，介绍了如何构建一个聊天机器人应用程序，允许用户同时与多个PDF进行交流。作者演示了如何使用OpenAI和Hugging Face模型创建应用程序。教程首先设置了必要的依赖项，并使用Streamlit创建了一个图形用户界面。界面包括一个文本输入框供用户提问，以及一个侧边栏用于上传PDF文档。
+
+#### 要点
+- 💡 使用OpenAI和Hugging Face模型构建聊天机器人应用程序
+- 💡 使用PyPDF2库从PDF中提取文本
+- 💡 使用Hugging Face库的文本分割器将文本分成较小的块
+- 💡 使用OpenAI嵌入创建向量存储，使用Hugging Face嵌入进行免费操作
+- 💡 使用Hugging Face对话检索链和OpenAI语言模型创建对话链
+
+这篇教程提供了一步一步构建与多个PDF交互的聊天机器人应用程序的指南。作者涵盖了必要的依赖项、创建图形用户界面、从PDF中提取文本、生成嵌入以及实现具有记忆的对话链的过程。教程还包括使用HTML模板和CSS样式显示聊天消息的说明。总体而言，这篇教程提供了一个全面的流程概述，并提供了使用OpenAI和Hugging Face模型的选项。
+
+### Detailed Summary
+The article is a tutorial on how to build a chatbot application that allows users to chat with multiple PDFs at once. The author demonstrates how to create the application using both OpenAI and Hugging Face models. The tutorial begins by setting up the necessary dependencies and creating a graphical user interface using Streamlit. The interface includes a text input for users to ask questions and a sidebar for uploading PDF documents.
+
+The author then explains the process of extracting text from the PDFs using the PyPDF2 library. The text is divided into smaller chunks using a text splitter from the Hugging Face library. These chunks are then converted into embeddings, which are vector representations of the text. The author shows how to create a vector store using OpenAI embeddings, as well as how to use Hugging Face embeddings for free, although it may be slower without a GPU.
+
+Next, the author introduces the concept of a conversation chain, which allows the chatbot to have memory and context. The conversation chain is created using the Hugging Face conversational retrieval chain and the OpenAI language model. The author explains how to handle user input and generate responses using the conversation chain. The chat history is stored in a session state variable to maintain the conversation context.
+
+To display the chat messages, the author uses custom HTML templates and CSS styles. The templates include placeholders for the user and bot messages, which are replaced with the actual content using the Python replace function. The author demonstrates how to display the chat history using the templates and session state variable.
+
+Finally, the author provides an alternative approach using Hugging Face models instead of OpenAI. The process is similar, but the author uses the Hugging Face Hub to access different language models. The author notes that the Hugging Face models are ranked higher in performance compared to OpenAI models for embedding tasks.
+
+In conclusion, the tutorial provides a step-by-step guide on building a chatbot application that can interact with multiple PDFs. The author covers the necessary dependencies, creating the graphical user interface, extracting text from PDFs, generating embeddings, and implementing a conversation chain with memory. The tutorial also includes instructions on displaying the chat messages using HTML templates and CSS styles. Overall, the tutorial offers a comprehensive overview of the process and provides options for using both OpenAI and Hugging Face models.

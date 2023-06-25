@@ -1,0 +1,31 @@
+#### Title (8 words)
+Topic Modeling: Extracting Structured Data from Unstructured Text
+
+#### Short Synopsis (42 words)
+This article discusses the use case for topic modeling and how it can be applied to various types of content. The author emphasizes the value of extracting structured data from unstructured text and highlights the manual effort required to perform this task.
+
+#### Key Points (63 words)
+🔑 Topic modeling can be applied to various types of content
+🔑 There is an opportunity to create a productionized service for extracting topics from podcasts and videos
+🔑 The author demonstrates a two-pass approach for topic modeling
+🔑 Learning the nuts and bolts of topic modeling is important
+🔑 The article provides a step-by-step guide to implementing topic modeling using language models
+
+#### Detailed Summary (512 words)
+In this article, the author discusses the use case for topic modeling and how it can be applied to various types of content, such as YouTube videos, podcasts, meeting notes, legal documents, movie scripts, books, and lecture notes. The author emphasizes the value of extracting structured data from unstructured text and highlights the manual effort required to perform this task.
+
+The author suggests that there is an opportunity to create a productionized service for extracting topics from podcasts and videos, as demonstrated by the example of the Acquired Podcast website, which does not have topics listed on their episodes. The author proposes offering this service to podcasters and video creators, providing them with a list of topics for their content.
+
+To demonstrate the process of topic modeling, the author uses a two-pass approach. In the first pass, the entire document is processed using mapreduce, and the topics and bullet points are extracted. The author acknowledges that this approach may be expensive in terms of computational resources but suggests adjusting the parameters based on individual preferences.
+
+In the second pass, the author iterates through each topic bullet point and expands on them using a subset of context selected via retrieval. This approach allows for a more detailed exploration of the topics and provides additional information beyond the initial bullet points. The author notes that this two-pass approach was found to be effective for their specific use case but encourages experimentation with different methods.
+
+The author assumes that the user does not have a table of contents or contents for the text being analyzed, as having such information would be helpful in the topic modeling process. The author also emphasizes the importance of learning the nuts and bolts of topic modeling to have more control over the process, rather than relying on third-party tools.
+
+The article provides a step-by-step guide to implementing topic modeling using GPT-3.5 Turbo and GPT-4 language models. The author demonstrates how to split the transcript into chunks, create custom prompts for extracting topics, and consolidate the results. The structured data extracted from the transcript includes topic names, descriptions, and tags.
+
+The author also explores the expansion of topics by using a retrieval method and the vector store dance technique. This allows for the generation of longer summaries or the transformation of topics into different formats. The author highlights the importance of structured data in making it more valuable and less work-intensive for potential users.
+
+Additionally, the article discusses the extraction of chapters or timestamps from a transcript. The author presents a custom prompt for finding the first timestamp when a speaker starts talking about a specific topic. This retrieval process helps in organizing the content and provides a clear structure for the transcript.
+
+In conclusion, the article provides a comprehensive overview of topic modeling and its applications in extracting structured data from unstructured text. The step-by-step guide and examples demonstrate the implementation of topic modeling using language models and retrieval methods. The author emphasizes the value of structured data and the potential for creating a productionized service for content creators.

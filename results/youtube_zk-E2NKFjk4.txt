@@ -1,0 +1,41 @@
+#### Title (7 words)
+AI Security: Adversarial Attacks and Defense Techniques
+
+#### Short Synopsis (60 words)
+This article provides an overview of AI security, focusing on adversarial attacks and defense techniques. It explains the different types of adversarial attacks, including evasion attacks, poisoning attacks, backdoor attacks, and model extraction attacks. The article highlights the importance of defense techniques and introduces the Adversarial Robustness Toolbox (ART) as a powerful tool for implementing and evaluating AI security measures.
+
+#### Key Points (179 words)
+- Adversarial attacks can cause malfunction in machine learning and AI models
+- Adversarial attacks can occur at various stages, including training data, training model, and testing
+- Lack of explainability in complex models makes them more vulnerable to adversarial attacks
+- Adversarial attacks can be categorized into evasion attacks, poisoning attacks, backdoor attacks, and model extraction attacks
+- Evasion attacks involve adding small digital perturbations to interfere with model's inference
+- Physical attacks involve adding adversarial patches to deceive object detection systems
+- Poisoning attacks involve modifying training data to attack the model during retraining
+- Backdoor attacks involve modifying the model's structure to trigger it with specific inputs
+- Model extraction attacks involve stealing model information by analyzing input-output and external information
+- The Adversarial Robustness Toolbox (ART) is a Python library developed by IBM for AI security
+- ART provides defense techniques at three levels: attack mitigation, model security, and secure architecture
+- ART offers modules for attacks, defenses, estimators, evaluation, metrics, and pre-processing
+- The article concludes with a hands-on demonstration of the ART library
+
+#### Detailed Summary (622 words)
+The article begins by introducing the topic of AI security and the need to pay attention to the field. While machine learning and artificial intelligence are often associated with positive applications, such as improving daily life and convenience, they can also be used for malicious purposes. The article focuses on adversarial attacks on machine learning models, specifically the introduction to adversarial attacks and defense techniques.
+
+The author explains that adversarial attacks are a method of causing malfunction in machine learning and AI models. They can occur at various stages, including training data, training model, and testing. The lack of explainability in complex models, known as black box models, makes them more vulnerable to adversarial attacks. The article categorizes adversarial attacks into four types: evasion attacks, poisoning attacks, backdoor attacks, and model extraction attacks.
+
+Evasion attacks involve adding small digital perturbations to the model's input to interfere with its inference. The article explains the fast gradient sign method (FGSM), which is a popular evasion attack. It involves adding noise to the input image based on the sign of the gradient of the targeted model's cost function. The article provides an example of how FGSM can be implemented using the Adversarial Robustness Toolbox (ART), a Python library developed by IBM for machine learning security.
+
+The article then discusses physical attacks, which are a type of evasion attack that can be implemented in the real world. It explains how an adversarial patch can be added to an image to deceive object detection systems. The patch is optimized digitally and can be printed and attached to an object to manipulate the system's classification. The article highlights the importance of transferability, which measures the ability to transfer an attack from a known model to an unknown model.
+
+Next, the article delves into poisoning attacks, which involve modifying the training data to attack the model during the retraining stage. By injecting malicious samples into the training data, attackers can significantly affect the accuracy of AI models. The article provides examples of poisoning attacks, such as contaminating dosage recommendation systems and distorting Google's spam filter.
+
+The article then explores backdoor attacks, which involve modifying the model's structure during implementation. By adding crafted neurons, the model can be triggered by specific inputs known only to the attacker. The article presents examples of digital and physical triggers in facial recognition models, highlighting the potential of backdoor attacks in identity verification systems.
+
+Model extraction attacks are discussed next, which involve stealing model information by analyzing input-output and external information. Attackers can estimate model information by repeatedly sending requests to the machine learning model and analyzing the output. The stolen information can then be used to generate adversarial examples and attack the targeted model.
+
+The article emphasizes the importance of defense techniques in AI security. It introduces the Adversarial Robustness Toolbox (ART), a Python library developed by IBM that supports various learning frameworks, tasks, and data formats. The toolbox provides defense techniques at three levels: attack mitigation, model security, and secure architecture. It offers modules for attacks, defenses, estimators, evaluation, metrics, and pre-processing.
+
+The article concludes by providing a hands-on demonstration of the ART library. It presents code examples for the FGSM evasion attack and the adversarial patch attack. The code demonstrates how to implement these attacks using the ART library and provides insights into the attack performance and results.
+
+In summary, the article provides a comprehensive overview of AI security, focusing on adversarial attacks and defense techniques. It explains the different types of adversarial attacks, including evasion attacks, poisoning attacks, backdoor attacks, and model extraction attacks. The article highlights the importance of defense techniques and introduces the Adversarial Robustness Toolbox (ART) as a powerful tool for implementing and evaluating AI security measures.

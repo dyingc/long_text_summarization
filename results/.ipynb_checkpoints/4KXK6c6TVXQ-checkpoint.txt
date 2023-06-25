@@ -1,0 +1,24 @@
+#### Short Synopsis
+The article discusses the implementation of OpenAI's new function calling system and models with LangChain to build a finance bot. It explains the structure of OpenAI functions, demonstrates the creation of custom tools, and showcases the capabilities of the model in handling various stock-related queries.
+
+#### Key Points
+- 🤖 OpenAI's new function calling system and models with LangChain are used to build a finance bot.
+- 📊 The bot allows users to ask questions about stock prices, changes in stock prices, and compare the performance of different stocks.
+- 🛠️ Custom tools are created in LangChain to define functions, with the importance of providing proper input schemas highlighted.
+- 📝 The process of manually invoking the tool to retrieve stock prices is explained.
+- ✅ Advantages of using OpenAI functions include better reasoning, tool selection, and understanding of different units of time, but customization and transfer to open-source models may be challenging.
+
+### Detailed Summary
+The article discusses the implementation of OpenAI's new function calling system and models with LangChain to build a finance bot. The author starts by explaining the structure of OpenAI functions, which consist of a list of functions, each with a name, description, and parameters. The parameters define the inputs required for the function to produce the desired output.
+
+To demonstrate the implementation, the author uses the Yahoo Finance API to create a simple finance bot. The bot allows users to ask questions about stock prices, changes in stock prices over a specific period, and compare the performance of different stocks. The author emphasizes that the knowledge of stock ticker symbols is built into the GPT model, enabling it to understand and provide the correct information when asked about specific stocks.
+
+The author then introduces the concept of tools in LangChain, which are used to define custom functions. They demonstrate how to create a custom tool for retrieving stock ticker prices using the Yahoo Finance API. The tool is defined as a class that inherits from the base tool in LangChain, and the required inputs are specified using a Pydantic class. The author highlights the importance of providing an argument schema to ensure proper functioning of the tool.
+
+Next, the author explains the process of manually invoking the tool to retrieve stock prices. They show how to create a human message, pass it along with the tool to the model, and extract the function call argument from the AI message. The tool is then executed with the extracted arguments, and the result is passed back to the model as a function message. Finally, the model is called again with the updated messages to obtain the final answer.
+
+The article also discusses the advantages and disadvantages of using OpenAI functions. The advantages include better reasoning and tool selection compared to other methods, as well as the ability of the model to handle conversions and understand different units of time. However, the author notes that customization via prompts may be more challenging with OpenAI functions, and it may be difficult to transfer the agent to an open-source model.
+
+The author extends the finance bot by adding additional tools for calculating the percentage change in stock prices and determining the best performing stock among a group. They demonstrate how to use the agent to ask multiple questions and obtain the desired results. The model is able to handle different time periods and convert them to the appropriate number of days for the functions.
+
+In conclusion, the article provides a comprehensive overview of implementing OpenAI's new function calling system and models with LangChain to build a finance bot. The author explains the structure of OpenAI functions, demonstrates the creation of custom tools, and showcases the capabilities of the model in handling various stock-related queries. The article highlights the advantages and disadvantages of using OpenAI functions and emphasizes the importance of providing proper input schemas for the tools. Overall, the implementation of the finance bot showcases the potential of OpenAI functions in creating conversational agents for specific domains.

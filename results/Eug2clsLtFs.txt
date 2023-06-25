@@ -1,0 +1,26 @@
+简要概述：
+ReACT论文提出了一种构建对话代理的框架，该代理可以通过融合推理和行动来回答问题。该论文结合了思维链论文的思想，发现让模型在推理之前进行推理可以提高其性能。然而，ReACT论文将其推进了一步，将行动和观察融入到了这个过程中。
+
+亮点：
+- 💡 ReACT将推理和行动结合起来，使用思维过程推理问题，采取行动搜索信息，并使用观察结果来完善推理，从而获得更好的结果。
+- 🤖 ReACT系统通过提问引导代理，进行思考和一系列行动，以找到答案。系统使用语言模型生成问题的回答，并指导采取的行动。
+- 🔍 ReACT链包括五个组件：提示、思考、行动、观察和草稿本。提示是给语言模型的初始问题或任务，思考是模型对问题的内部表示，行动是模型下一步的决策，观察是行动的结果，草稿本是模型对以前观察和行动的记忆。
+- 🎬 ReACT链可以用于解决复杂问题，例如多跳问题，可以将问题分解为较小的步骤，然后使用ReACT链来解决每个步骤。
+- 🚀 ReACT系统在客户服务、教育和医疗保健等各种应用中具有潜力。
+
+### Detailed Summary
+The ReACT paper is a framework for building conversational agents that can answer questions by incorporating reasoning and action. The paper builds on the chain of thought paper, which found that getting a model to do its reasoning upfront improves its performance. However, the ReACT paper takes this a step further by incorporating action and observation into the process. The article explains that ReACT combines reasoning upfront with taking some kind of action, such as using a tool or searching for information, and then using the observation back in the language model to refine the reasoning. This multi-step approach allows for better results than just reasoning or action alone.
+
+The article provides examples of how ReACT works, using the hotpot Q&A dataset. It shows that if a question is asked straight up, the model will give an answer without any reasoning. However, if reasoning only is used, the model will incorporate some chain of thought prompt to provide some reasoning behind the answer. If action only is used, the model will search for information and bring back an observation to come to the answer. ReACT prompting combines both techniques, using a thought process to reason through the question, taking action to search for information, and using the observation to refine the reasoning until the answer is reached.
+
+The article also discusses the code for implementing ReACT, using the OpenAI model. It explains that the best models for this kind of task are those that have been fine-tuned or have a large amount of code in their pre-training. The article provides examples of using chain of thought reasoning and ReACT prompting to answer questions, showing the difference in performance between the two techniques.
+
+The ReACT system works by priming the agent with a question, which leads to a thought and a series of actions that are taken to find the answer. The actions are based on the tools that are available to the agent, such as Wikipedia, and the observations that are made during the process of finding the answer. The system uses a language model, such as GPT-4 or ChatGPT, to generate responses to the questions and to guide the actions that are taken.
+
+The ReACT chain consists of five components: prompt, thought, action, observation, and scratch pad. The prompt is the initial question or task given to the language model, and the thought is the model's internal representation of the problem. The action is the model's decision on what to do next, and the observation is the result of that action. The scratch pad is the model's memory of previous observations and actions.
+
+The article provides an example of a multi-hop question, where the language model is asked to find the first film that Russell Crowe won an Oscar for and who directed that movie. The model uses the ReACT chain to break down the problem into smaller steps, starting with a search for Russell Crowe. It then generates a new thought to find the first film he won an Oscar for, which turns out to be Gladiator. The model then searches for information on Gladiator and determines that it was directed by Ridley Scott. Finally, the model combines this information to provide the answer to the original question.
+
+The article emphasizes the importance of customizing the prompt to suit the specific task at hand. While the ReACT paper provides examples, it is recommended to modify them to relate to the topic being addressed. The article notes that while the ReACT chain works well with the right language model, most open-source models do not have the ability to perform reasoning tasks. However, this is expected to change in the future.
+
+Overall, the article provides a clear explanation of the ReACT chain and its components, as well as an example of how it can be used to solve a complex problem. It also highlights the importance of customizing the prompt to suit the specific task at hand, and notes that the ReACT chain is currently only effective with certain language models. The ReACT system has potential for use in a variety of applications, including customer service, education, and healthcare.

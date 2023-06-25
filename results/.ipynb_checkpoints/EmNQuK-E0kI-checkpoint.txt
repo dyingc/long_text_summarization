@@ -1,0 +1,28 @@
+简要概述：
+本文介绍了量子力学中的基本概念——波函数。波函数是描述量子物体行为的数学描述，它的x轴描述了电子在空间中的位置，而y轴描述了在特定位置找到电子的概率。当我们平方波函数的值时，它给出了概率幅，可以被视为概率波。它描述了在特定位置找到电子的可能性。
+
+亮点：
+- 🌊 波函数是描述量子物体行为的数学描述。
+- 📈 x轴描述了电子在空间中的位置，y轴描述了在特定位置找到电子的概率。
+- 🎲 平方波函数的值给出了概率幅，可以被视为概率波。
+- 🤔 波函数是一个棘手的主题，但它是现代量子力学的基石，理解它对于在这个领域取得进展至关重要。
+- 🧮 做物理学的数学可以加深对量子力学的理解。
+- 🎓 Brilliant提供了一门适合初学者的量子力学课程，可以帮助加深对这个复杂主题的理解。
+- 🎁 Brilliant的订阅可以成为对数学、物理和计算机科学感兴趣的人的独特而周到的假日礼物。
+
+### Detailed Summary
+The wave function is a fundamental concept in quantum mechanics that describes the behavior of a quantum particle. It is a mathematical description of a quantum object that takes the form of a wave. The x-axis of the wave function describes where the electron can be in space, while the y-axis describes the probability of finding the electron in a particular position. When we square the value of the wave function, it gives us something called the probability amplitude, which can be thought of as a wave of probability. It describes the likelihood of finding the electron in a given place if we went to look for it there.
+
+The wave function is a tricky subject, and a lot of mystery still surrounds this elusive concept. However, it is the bedrock of modern quantum mechanics, and it is essential to understand it to make progress in this field. In this article, the author explains in plain English exactly what the wave function is, as well as answer the top three most voted questions to the author's post.
+
+The wave function is a process that takes in a value and spits out a related value. For example, a very simple function is y equals x, where the output value is exactly the same as the input value. A slightly more complicated function is y equals x squared, where the output value is the square of the input value. The shape this function makes is called a parabola. Some functions describe real-world phenomena. For example, if you throw an object in the air, it'll trace out the path of an upside-down parabola. Just like this function describes the behavior of a thrown object, the wave function describes the behavior of a quantum particle.
+
+The behavior of a quantum particle can always be described by a combination of our two favorite waves from high school, the sine wave and the cosine wave. The wave function is a mathematical description of a quantum object that takes the form of a wave. The x-axis of the wave function describes where the electron can be in space, while the y-axis describes the probability of finding the electron in a particular position. When we square the value of the wave function, it gives us something called the probability amplitude, which can be thought of as a wave of probability. It describes the likelihood of finding the electron in a given place if we went to look for it there.
+
+The Schrodinger wave equation is a fundamental equation in quantum mechanics. The author explains that Schrodinger was asked to find a wave equation that could explain the wave-like properties of particles, and he produced four papers outlining the equation in about two months. However, the papers do not contain a derivation of the equation, and Nobel prize-winning physicist Richard Feynman noted that some of the arguments Schrodinger used were false. Despite this, the equation accurately describes nature, and its origins remain mysterious.
+
+The author notes that understanding the inner workings and train of thought behind an equation can reveal a lot of intuition, but in this case, knowing the origins of the equation does not shed much light on it. Instead, the best way to familiarize oneself with quantum mechanics is to work through problems and spend time forming an intuition. The author recommends a course on quantum mechanics for beginners offered by Brilliant, which starts with experiments that reveal the strange quantumness of the world and requires no prior knowledge. The course includes a section dedicated to the math of quantum physics, which can deepen one's understanding of concepts that are difficult to grasp.
+
+The author emphasizes the importance of doing the math behind the physics to deepen one's understanding of quantum mechanics. The course offered by Brilliant asks questions and requires students to work out answers to problems, which is the only way to gain a deeper understanding of this weird and wonderful piece of physics. The author notes that Brilliant offers many other courses specializing in math, physics, and computer science, and a subscription to Brilliant would make a unique and thoughtful holiday gift for anyone interested in these areas.
+
+In conclusion, the article discusses the mysterious origins of the Schrodinger wave equation and recommends a course on quantum mechanics for beginners offered by Brilliant as a way to deepen one's understanding of this complex topic. The author emphasizes the importance of doing the math behind the physics and working through problems to gain a deeper understanding of quantum mechanics.

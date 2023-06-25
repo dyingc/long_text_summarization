@@ -1,0 +1,24 @@
+#### Short Synopsis
+OpenAI has announced updates to their models and pricing. The main update is the introduction of function calling, allowing users to define functions for specific actions and receive structured outputs based on the input text. The new models, GPT-4 and GPT 3.5 turbo, are more influenced by the system prompt and support a larger context window. The pricing for the GPT 3.5 turbo model has been reduced by 25%.
+
+#### Key Points
+- 🔄 Function calling introduced, allowing users to define functions for specific actions and receive structured outputs.
+- 🚀 GPT-4 and GPT 3.5 turbo models are more influenced by the system prompt and support a larger context window.
+- 💰 Pricing for the GPT 3.5 turbo model reduced by 25%.
+- 💡 Use cases for function calling include creating chatbots with external tools, converting natural language into API calls or database queries, and extracting structured data from texts.
+- 📝 Implementation involves passing a function definition and user input to the model, which generates a response with the appropriate function call and parameters.
+
+### Detailed Summary
+OpenAI has made a new announcement regarding several updates to their models and pricing. One of the main updates is the introduction of function calling, which allows users to pass in a definition of a tool or action and receive a structured output based on the text input. This means that users can now create chatbots that can use external tools and define functions to perform specific tasks. This eliminates the need for additional tools like ReACT and output parsers, as the model can now directly respond with JSON data that adheres to the function signature.
+
+The new models, GPT-4 and GPT 3.5 turbo, have been fine-tuned to be more influenced by the system prompt, allowing for more steerable API models. This means that the models can now respond more accurately to the system prompt and provide more tailored outputs. Additionally, the GPT 3.5 turbo model now supports a 16K context window, which is a significant improvement from the previous 4K context window. This allows for tasks like summarization of longer texts, processing of archive papers, and handling larger amounts of text in a single response.
+
+In terms of pricing, the cost of the standard GPT 3.5 turbo model has been reduced by 25%. The new GPT 3.5 turbo 16K model is priced at 0.30 cents per thousand tokens on the input and 0.4 cents per thousand tokens on the output. This pricing change makes the models more accessible and cost-effective for users.
+
+The introduction of function calling has several use cases. One example is the ability to create chatbots that can use external tools. By defining a function for a specific action, such as sending an email, users can pass in the necessary parameters like the recipient and the body of the email, and the model will generate a response with the appropriate information filled in. Another use case is converting natural language into API calls or database queries. Users can define functions that query databases or make specific API calls based on the input text, allowing for easier integration with external systems. The third use case is extracting structured data from texts. By defining a function to extract specific information like names, birthdays, or locations, users can receive structured data in JSON format, eliminating the need for complex prompt manipulation.
+
+The implementation of function calling involves passing the model a function definition and a user input. The function definition includes the name of the function, a description, and the properties it needs to return. The user input is processed by the model, which determines if a function needs to be called and generates a response with the appropriate function call and parameters. The response from the function call is then passed back to the model, which generates the final response to the user.
+
+The introduction of function calling simplifies the process of interacting with the model and eliminates the need for additional tools and complex prompt manipulation. Users can now define functions for specific actions and receive structured outputs based on the input text. This opens up new possibilities for creating more advanced and interactive chatbots, integrating with external systems, and extracting structured data from texts.
+
+In conclusion, OpenAI's new announcement introduces function calling, which allows users to define functions for specific actions and receive structured outputs based on the input text. This update brings more steerable API models, a longer context window, and lower prices. The function calling feature eliminates the need for additional tools and simplifies the process of interacting with the model. It opens up new possibilities for creating advanced chatbots, integrating with external systems, and extracting structured data from texts.

@@ -1,0 +1,27 @@
+#### Title (10 words)
+Tree of Thoughts: Deliberate Problem Solving with Large Language Models
+
+#### Short Synopsis (45 words)
+The paper proposes a decoding technique that utilizes large language models in a unique way by using an explicit tree search over the outputs of the language model. It evaluates the technique on tasks such as the game of 24, creative writing, and mini crosswords.
+
+#### Key Points (74 words)
+🌳 The paper introduces the Tree of Thoughts technique for decoding with large language models
+🔍 The technique involves an explicit tree search over the model's outputs
+🎮 It is evaluated on tasks such as the game of 24, creative writing, and mini crosswords
+📈 The technique outperforms other baselines in the game of 24 and mini crosswords
+📚 The authors suggest the technique may be more beneficial for algorithmic tasks than creative writing
+
+#### Detailed Summary (545 words)
+In the paper titled "Tree of Thoughts: Deliberate Problem Solving with Large Language Models," the authors propose a decoding technique that utilizes large language models in a unique way. Instead of simply asking the model for its output once, the authors suggest using an explicit tree search over the outputs of the language model. This approach allows for branching off and backtracking, which can be particularly useful for tasks that require a pattern of investigation. The paper introduces the decoding technique and presents new tasks where it is expected to perform well.
+
+The main proposition of the paper is to prompt a language model using input-output prompting. This involves specifying the task and optionally providing an output format. For example, one could ask the model to write an email to their boss in a specific format. This approach is similar to the Chain of Thought prompting technique, where the model is instructed to explicitly generate intermediate steps in problem-solving. However, the authors argue that the Tree of Thoughts technique, which involves a tree search over the model's outputs, can yield better results. The authors believe that this approach represents a small step towards combining language models with programming and algorithms.
+
+The paper evaluates the proposed technique on three tasks: the game of 24, creative writing, and mini crosswords. In the game of 24, the model is asked to come up with a mathematical expression that results in 24 given four numbers. The authors note that the prompts for this task are quite specific and resemble programming algorithms. The results show that the Tree of Thoughts technique outperforms the other baselines, but the prompts are still highly tailored to the problem.
+
+In creative writing, the model is asked to generate a story based on a given prompt. The authors compare the performance of the Tree of Thoughts technique with other baselines and find that there is not a significant difference. They suggest that the technique may be more beneficial for algorithmic tasks rather than creative writing.
+
+The mini crossword task involves filling in a crossword puzzle grid based on given clues. The authors argue that this task can benefit greatly from the backtracking and exploration capabilities of the Tree of Thoughts technique. The results show that the technique significantly improves the model's ability to solve crossword puzzles compared to the other baselines.
+
+The authors also conduct ablation studies to analyze the impact of pruning and backtracking on the performance of the Tree of Thoughts technique. They find that heuristically guiding the model by always providing the best thought during evaluation improves performance. Removing pruning or backtracking leads to a decrease in performance, particularly in terms of the total number of games solved.
+
+Overall, the paper presents an interesting approach to utilizing large language models for problem-solving tasks. The Tree of Thoughts technique, with its tree search and backtracking capabilities, shows promise in improving the model's performance on algorithmic tasks. However, the authors acknowledge that the prompts used in the evaluation are highly tailored to the specific problems, and further research is needed to explore the technique's potential in more general problem-solving scenarios. The paper provides a solid foundation for future work in combining language models with programming and algorithms, opening up new possibilities for AI-assisted problem-solving.

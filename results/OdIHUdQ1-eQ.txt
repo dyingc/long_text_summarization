@@ -1,0 +1,24 @@
+#### Short Synopsis
+This tutorial introduces the piPDF library, a powerful tool for working with PDF files in Python. It covers various functionalities such as extracting text, merging and splitting PDF files, rotating pages, and extracting images.
+
+#### Key Points
+- 💡 The piPDF library is a useful tool for working with PDF files in Python.
+- 💡 Other libraries like fpdf, PDFMiner, PDFPlumber, and Camelot are also mentioned.
+- 💡 The tutorial covers extracting text, splitting and merging PDFs, rotating pages, and extracting images.
+- 💡 Clear explanations and code examples are provided for each functionality.
+- 💡 The importance of using the correct version of the piPDF library is emphasized.
+
+#### Detailed Summary
+In this tutorial, the author introduces the piPDF library, which is a powerful tool for working with PDF files in Python. The tutorial covers various functionalities of the library, including extracting text from PDFs, merging and splitting PDF files, getting the last page of a PDF, rotating PDF pages, and extracting images.
+
+The author begins by providing an overview of the piPDF library and its various methods. They mention other useful libraries for working with PDFs in Python, such as fpdf, PDFMiner, PDFPlumber, and Camelot. They also highlight the importance of using the correct version of the library, as there have been changes in function names.
+
+The tutorial then dives into the first functionality: extracting text from PDFs. The author demonstrates how to open a PDF file using the piPDF library and read its metadata, such as the title and author. They also show how to extract text from specific pages of the PDF.
+
+Next, the author explains how to split a PDF file into multiple PDFs. They provide a step-by-step guide on how to open the file, read its pages, select specific pages, and save them as separate PDF files. They also show how to split a PDF up to a particular page or get the last page of a PDF.
+
+The tutorial then moves on to rotating PDF pages. The author explains how to open a PDF file, select a specific page, and rotate it by a given angle. They provide examples of rotating a page by 90 degrees and 180 degrees.
+
+Throughout the tutorial, the author emphasizes the importance of using the correct version of the piPDF library and provides clear explanations and code examples for each functionality. They also mention other useful libraries for working with PDFs in Python.
+
+In conclusion, the tutorial provides a comprehensive overview of the piPDF library and its functionalities for working with PDF files in Python. The author covers extracting text, splitting and merging PDFs, getting the last page, rotating pages, and extracting images. The tutorial is well-structured and easy to follow, making it a valuable resource for anyone working with PDFs in Python.

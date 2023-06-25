@@ -1,0 +1,24 @@
+#### Short Synopsis
+The article discusses the new function calling capability introduced by OpenAI and its potential impact on programming and AI. It highlights the ability to create functions that retrieve structured data from user input and generate terminal commands. The feature also allows for the inclusion of different personalities in AI responses.
+
+#### Key Points
+- 💡 The function calling feature in OpenAI brings about a massive change in programming and the intersection of programming and AI.
+- 💡 It enables the creation of functions that retrieve structured data from user input, resulting in more accurate responses.
+- 💡 The feature allows for the generation of terminal commands, automating the process of generating commands.
+- 💡 Different personalities can be incorporated into AI responses by defining them as functions.
+- 💡 The function calling feature opens up endless possibilities for integrating AI into deterministic programs.
+
+### Detailed Summary
+In this article, the author discusses the new function calling capability introduced by OpenAI and its potential impact on programming and artificial intelligence (AI). The author begins by highlighting that the recent updates have made things faster and cheaper, but the main focus is on the function calling feature. The author believes that this feature will bring about a massive change in programming and the intersection of programming and AI.
+
+The author proceeds to provide examples to demonstrate how the function calling capability can be utilized. They start with a scenario where a user asks a chatbot about the weather in a specific location. Traditionally, the chatbot would respond with a generic answer, but with the function calling feature, the programmer can create a function that retrieves weather data based on the user's location. By using the function calling feature, the programmer can extract structured data from the user's input and pass it to the function to provide a more accurate response.
+
+The author explains that the function calling feature requires the use of the new model, gpt40613. They emphasize the importance of accurately describing the function and its parameters to achieve better results. The author also mentions that multiple functions can be defined, allowing for a wide range of possibilities, such as creating a home assistant that can perform various tasks like dimming lights, playing music, or ordering items online.
+
+Next, the author introduces the concept of term GPT, where the goal is to automate the process of generating terminal commands. They explain that previously, this process required parsing the output of the chatbot, which could be challenging and unreliable. However, with the function calling feature, the programmer can define a function that generates the desired terminal commands. The author demonstrates how to use the function calling feature to extract the commands and format them for use.
+
+The author then presents another example where the function calling feature is used to elicit different personalities from the AI. They describe a scenario where a user asks if it is safe to drink water from a dehumidifier. By defining different personality responses as functions, the programmer can instruct the AI to provide sassy and sarcastic or happy and helpful responses. The author highlights the flexibility of the function calling feature, allowing for the inclusion of various parameters and the ability to specify which functions to call.
+
+Throughout the article, the author expresses their excitement about the potential of the function calling feature. They believe that it opens up endless possibilities for integrating AI into deterministic programs and emphasizes the power and versatility of this capability. The author also acknowledges that there may be room for improvement in the way functions and parameters are described to optimize results.
+
+In conclusion, the author provides a comprehensive overview of the new function calling capability introduced by OpenAI. They discuss its potential impact on programming and AI, providing examples to illustrate its usage. The author emphasizes the importance of accurately describing functions and parameters to achieve desired results. They express their enthusiasm for the possibilities this feature brings and invite readers to explore and experiment with its potential applications.

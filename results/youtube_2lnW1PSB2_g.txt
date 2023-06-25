@@ -1,0 +1,29 @@
+#### Title (11 words)
+Exploring the Frontier of AI: Mimicking Human Brainstorming and Problem Solving
+
+#### Short Synopsis (66 words)
+This article explores the use of large language models, specifically those trained using the Transformer architecture, in mimicking human brainstorming and solving complex problems. It discusses the technique of prompt engineering, including the Tree of Thoughts approach, and highlights its effectiveness in mathematical reasoning problems. The article emphasizes the flexibility and adaptability of prompt engineering and encourages readers to experiment with their own prompts and scenarios.
+
+#### Key Points (88 words)
+- Large language models, trained using the Transformer architecture, can mimic human brainstorming and solve complex problems.
+- Prompt engineering techniques, such as the Tree of Thoughts approach, leverage the capabilities of large language models.
+- The Tree of Thoughts technique breaks down problems into smaller thought steps and allows for flexibility and exploration in problem-solving.
+- The effectiveness of prompt engineering can be demonstrated through logic problems and comparing different expert responses.
+- Prompt engineering techniques can be modified and experimented with to observe changes in outcomes.
+
+#### Detailed Summary (572 words)
+In this article, Richard Walker from Lucidate explores the exciting frontier of artificial intelligence (AI) and its ability to mimic human brainstorming and solve complex problems. He focuses on the use of large language models, specifically those trained using the Transformer architecture of neural networks. While these models were not explicitly designed to solve mathematical problems, they have shown remarkable capabilities in this area.
+
+Prompt engineering is a discipline that has emerged to leverage the capabilities of large language models. It involves techniques such as Chain of Thought, Self-Consistency, and React Prompting, which require decorating a base question with additional text to stimulate the model's ability to acquire new skills at inference time. One such framework is Lang Chain, which includes prompt modules to store the necessary text for effective prompts.
+
+The Tree of Thoughts is a prompting technique designed to mimic human brainstorming and collaboration, making it particularly suited for mathematical reasoning problems. It breaks down the problem into smaller manageable thought steps, generates potential thoughts or next steps, evaluates their promise, and uses a search algorithm to navigate through the problem-solving process. This approach allows for flexibility, adaptability, and exploration in problem-solving, which was previously not possible with conventional language models.
+
+To demonstrate the effectiveness of the Tree of Thoughts prompting technique, the author provides a logic problem involving a lost watch. Carlos, a swimmer, places his watch in his towel at the locker room, carries it to a lounger, goes to the snack bar, and then heads to the pool. Upon emerging from the pool, he realizes he has lost his watch. The author asks the reader to consider where Carlos's watch ended up.
+
+When using Chat GPT, a simple input-output problem-solving approach, the model consistently predicts that the watch is at the snack bar. However, when the problem is decorated with the Tree of Thoughts prompt, the results are different. Expert 1 fails to identify the key element of the vigorous shaking of the towel at the lounger, while Expert 2 demonstrates sharp deductive reasoning skills and correctly identifies the shaking as the crucial factor. Expert 3 aligns somewhat with Expert 1. Through review and critique, Expert 2's train of thought emerges as the most promising solution.
+
+The author emphasizes that the presented Tree of Thoughts prompt decorator is not sacred and encourages readers to make changes and run their own experiments. By modifying the prompt template, one can observe changes in outcomes. The author also mentions the possibility of invoking more experts, as the original paper used three. Additionally, the author demonstrates the impact of removing a line from the prompt, resulting in a slightly different outcome.
+
+It is noted that with GPT-4, the Tree of Thoughts technique may not be necessary for this particular problem. GPT-4, compared to prior versions like GPT-3.5, shows improved performance without relying on the Tree of Thoughts approach. The author also briefly mentions the use of Chain of Thoughts prompting, which had a 25% success rate in their small sample.
+
+In conclusion, the article highlights the potential of large language models and prompt engineering techniques in solving complex problems. The Tree of Thoughts prompting technique allows AI to brainstorm and explore multiple reasoning paths, mimicking human problem-solving processes. The author encourages readers to experiment with their own prompts and scenarios, sharing their results and experiences. The field of prompt engineering continues to evolve, and the possibilities for AI problem-solving are expanding.

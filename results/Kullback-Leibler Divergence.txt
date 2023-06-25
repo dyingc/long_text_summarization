@@ -1,0 +1,27 @@
+#### Title (3 words)
+Kullback-Leibler (KL) Divergence
+
+#### Short Synopsis (15 words)
+The KL divergence is a measure used to quantify the difference between two probability distributions.
+
+#### Key Points (73 words)
+- KL divergence measures the information lost when one distribution is used to approximate another
+- It is a non-symmetric measure that compares two probability distributions
+- KL divergence is not a distance measure and does not satisfy the properties of a metric
+- It is non-negative and equals 0 when the two distributions are the same
+- Smoothing methods can be used to account for unseen events when computing the KL divergence
+
+#### Detailed Summary (467 words)
+The Kullback-Leibler (KL) divergence is a measure used to quantify the difference between two probability distributions over the same variable. It is commonly used in data mining and originated in probability theory and information theory. The KL divergence, also known as relative entropy, information divergence, or information for discrimination, is a non-symmetric measure that compares two probability distributions, p(x) and q(x).
+
+The KL divergence, denoted as DKL(p(x), q(x)), measures the information lost when q(x) is used to approximate p(x). It calculates the expected number of extra bits required to code samples from p(x) using a code based on q(x) instead of a code based on p(x). Typically, p(x) represents the true distribution of data or observations, while q(x) represents a theory, model, description, or approximation of p(x).
+
+The KL divergence can be computed for discrete random variables using Equation (2.1), where p(x) and q(x) are probability distributions that sum up to 1 and are greater than 0 for any x in the variable's domain. For continuous random variables, the KL divergence is computed using Equation (2.2), which involves integrating over the entire range of x.
+
+It is important to note that the KL divergence is not a distance measure and does not satisfy the properties of a metric. It is not symmetric, meaning that the KL divergence from p(x) to q(x) is generally not the same as the KL divergence from q(x) to p(x). Additionally, it does not satisfy the triangular inequality. However, DKL(P||Q) is always non-negative, and it equals 0 if and only if P and Q are the same distribution.
+
+When computing the KL divergence, attention should be paid to the possibility of unseen events. If one distribution predicts an event as impossible (q(e) = 0) while the other distribution allows for its possibility (p(e) > 0), the two distributions are considered completely different. However, in practice, probability distributions are derived from observations and sample counting, so it is unreasonable to assume events as completely impossible. Smoothing methods can be used to derive probability distributions from observed frequency distributions, ensuring that the possibility of unseen events is taken into account.
+
+In an example illustrating the computation of the KL divergence by smoothing, two sample distributions P and Q are given. By introducing a small constant ϵ and adding it to each distribution, smoothed versions P' and Q' are obtained. The KL divergence DKL(P'||Q') can then be easily computed.
+
+In summary, the KL divergence is a measure used to quantify the difference between two probability distributions. It calculates the information lost when one distribution is used to approximate another. While it is not a distance measure, it is a non-negative measure that equals 0 when the two distributions are the same. Smoothing methods can be used to account for unseen events when computing the KL divergence.

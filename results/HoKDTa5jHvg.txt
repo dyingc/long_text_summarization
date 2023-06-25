@@ -1,0 +1,24 @@
+#### 简要总结
+本文讨论了融合模型，这是一种在图像生成领域近年来备受关注的生成模型。与传统的生成对抗网络相比，融合模型在生成艺术领域取得了有竞争力的结果。本文探讨了融合模型在文本到图像生成、图像变化生成和图像修复方面的能力。文章还强调了融合模型根据文本提示创建动画的能力。
+
+#### 亮点
+- 🌟 融合模型在图像生成领域取得了有竞争力的结果
+- 🎨 融合模型可以用于文本到图像生成、图像变化生成和图像修复
+- 🎞️ 融合模型可以根据文本提示创建动画
+
+
+
+### Detailed Summary
+The article discusses fusion models, a type of generative model that has gained popularity in recent years for image generation. Fusion models have been shown to achieve competitive results compared to traditional state-of-the-art GANs in the field of generative art. The article explores the capabilities of fusion models in text-to-image generation, image variation generation, and image inpainting. It also highlights the ability of fusion models to create animations given a text prompt.
+
+The article begins by explaining the general idea behind diffusion models, which form the basis of fusion models. Diffusion models involve a forward diffusion process, where noise is systematically added to an image, and a reverse diffusion process, where a neural network removes the noise to generate a clear image. The forward diffusion process starts with the original image and gradually adds more noise through iterative steps. The reverse diffusion process involves the neural network learning to remove noise from an image step by step. The article emphasizes that the reverse process is done iteratively rather than instantly to ensure better outcomes.
+
+The architecture of a fusion model is described as a unit-like architecture with a bottleneck in the middle. The model takes an image as input and uses downsample and resnet blocks to project the image to a smaller resolution. It then uses upsample blocks to project the image back up to the original size. Attention blocks and skip connections are also incorporated into the architecture. The model is designed for each time step, and sinusoidal embeddings are used to indicate the current time step. The article explains that the schedule, which scales the mean and variance of the noise applied at each time step, is crucial for regulating the amount of noise added.
+
+The article then delves into the mathematical formulas and derivations behind diffusion models. It explains the notation used to represent images at different time steps and defines the forward and reverse diffusion processes. The forward diffusion process is represented by a formula that involves sampling noise from a normal distribution and scaling it based on the schedule. The article demonstrates how the forward process can be applied iteratively using cumulative alphas. The reverse diffusion process is represented by a formula that involves predicting the noise in an image using a neural network. The article explains the derivation of the variational lower bound, which is used as the loss function for training diffusion models.
+
+The article discusses the improvements made in subsequent papers on diffusion models. It mentions the reconsideration of the variance, which was initially fixed but later learned through interpolation. The article also highlights the use of a better noise schedule, which is designed to destroy information more slowly and improve sampling quality. The improvements in architecture, including increased depth, more attention blocks, and adaptive group normalization, are also mentioned. The article notes that the improved diffusion models achieved better results in terms of FID scores compared to the original diffusion model.
+
+The article concludes by presenting the FID scores of diffusion models compared to other state-of-the-art models. While diffusion models ranked lower than some other models, the article emphasizes that fusion models have the potential to outperform GANs in the future. The article encourages further exploration of diffusion models and suggests that future research could focus on classifier guidance and upsampling techniques.
+
+In summary, the article provides a comprehensive overview of fusion models and diffusion models. It explains the concept of diffusion models, the architecture of fusion models, and the mathematical formulas and derivations behind diffusion models. The article also discusses the improvements made in subsequent papers and presents the results of diffusion models compared to other models. Overall, the article highlights the potential of fusion models in image generation and encourages further research in this field.

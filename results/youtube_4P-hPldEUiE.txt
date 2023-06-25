@@ -1,0 +1,34 @@
+#### Title (9 words)
+Automating Image Generation with Stable Fusion and Chat GPT
+
+#### Short Synopsis (59 words)
+The author demonstrates a simple way to automate image generation using Stable Fusion and Chat GPT. They explain the necessary libraries, API keys, and functions involved in the process. The author also provides examples of text prompts and negative prompts, and showcases the generated images. The inclusion of a user interface adds a visual element to the automation process.
+
+#### Key Points (109 words)
+- The process involves adding prompts and negative prompts, and specifying the number of images desired.
+- Libraries for opening and saving files, as well as accessing API keys, are required.
+- The Chat GPT function is used for generating text prompts.
+- The generate image function calls the Stable Fusion API to generate images based on text prompts.
+- A loop is used to generate the desired number of images.
+- Text prompts and negative prompts are read from text files.
+- The author provides examples of text prompts and negative prompts.
+- The code can be run in the terminal and a user interface is also available.
+
+#### Detailed Summary (533 words)
+In today's video, the author demonstrates a simple way to automate image generation using Stable Fusion and Chat GPT. The process involves adding prompts and negative prompts, and specifying the number of images desired. The rest of the process is automated. The author also provides a download link for the code used in the demonstration.
+
+To begin, the author explains the libraries required for the automation process. They include libraries for opening and saving files, as well as libraries for accessing API keys. The author mentions that they prefer storing API keys in a text file and provides instructions on how to find the API keys for OpenAI and Stable Fusion.
+
+Next, the author introduces the Chat GPT function, which is essential for generating text prompts. They mention that the model version can be chosen, and the temperature of the model can be adjusted to control the creativity of the response. The author also includes a system message for the conversation, which will be further explained later.
+
+The author then moves on to the generate image function, which calls the Stable Fusion API to generate images based on text prompts. The function includes parameters for height, width, scale, clip guidance, steps, and samples. The author explains that samples are set to one because the process will be run in a loop. They also mention that the model used is SD Excel version 2. The text prompt is specified in the function, and the image is saved as a PNG file.
+
+The author proceeds to explain the loop that will generate the desired number of images. They mention that the system message is set to prompt the chatbot to assist the user in creating prompts for images. The author also mentions the use of the Forge activity system prompt, which they have a separate video on. They then explain how the text prompts and negative prompts are read from text files.
+
+The author provides examples of text prompts and negative prompts in the text files. The text prompts are copied from online sources, while the negative prompts specify things that should not be present in the images. The author emphasizes that the negative prompts are important for better results. They also mention that random prompts can be created.
+
+Moving on, the author runs the code in the terminal and showcases the generated images. They mention that the prompts used for the images are displayed alongside the images. The author acknowledges that the results may not be amazing, but they demonstrate the functionality of the automation process.
+
+The author introduces a user interface (UI) that they have created for the automation process. The UI displays each image as it is generated, creating a never-ending photo frame effect. The author mentions that the code for the UI will be available for download on their website.
+
+In conclusion, the author demonstrates a simple way to automate image generation using Stable Fusion and Chat GPT. They explain the necessary libraries, API keys, and functions involved in the process. The author also provides examples of text prompts and negative prompts, and showcases the generated images. The inclusion of a user interface adds a visual element to the automation process.

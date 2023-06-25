@@ -1,0 +1,37 @@
+#### 简短概要
+PromptLayer是一个协作平台，用于团队和个人跟踪、调试和探索他们的语言模型应用请求。该平台旨在简化和优化语言模型的提示工程过程，提供一个协作环境，供团队实验、跟踪性能和迭代提示。
+
+#### 要点
+- 💡 Prompt工程是一种技能，涉及调整和优化提示以提高语言模型性能。
+- 💡 PromptLayer为独立开发者和团队提供功能，专为非技术利益相关者与工程师合作设计。
+- 💡 PromptLayer计划在未来六到十二个月内改进产品，特别注重构建提示工程的工作流程。
+- 💡 PromptLayer通过提供专用平台，将开发阶段与生产阶段分离，使工程师能够在部署之前在本地测试和优化提示。
+- 💡 PromptLayer致力于根据用户需求优先考虑功能，而不是被人工智能行业的噪音所困扰。
+
+#### 简洁要点
+- 💡 Prompt工程是一种技能，涉及调整和优化提示以提高语言模型性能。
+- 💡 PromptLayer为独立开发者和团队提供功能，专为非技术利益相关者与工程师合作设计。
+- 💡 PromptLayer计划在未来六到十二个月内改进产品，特别注重构建提示工程的工作流程。
+- 💡 PromptLayer通过提供专用平台，将开发阶段与生产阶段分离，使工程师能够在部署之前在本地测试和优化提示。
+- 💡 PromptLayer致力于根据用户需求优先考虑功能，而不是被人工智能行业的噪音所困扰。
+
+### Detailed Summary
+In this article, the author interviews Jared Zonnerak, the co-founder of PromptLayer, a collaborative platform for teams and individuals to track, debug, and explore their language model application requests. The conversation revolves around the common denominator that all language model practitioners share: the prompt. Zonnerak explains that prompt engineering is a skill set that involves tinkering and finagling with prompts to optimize the performance of language models. He believes that prompt engineering is not just for engineers, but also for product managers and non-technical stakeholders.
+
+PromptLayer was initially built for Zonnerak's own use in side projects, but after launching it in January, they received positive feedback from the community and decided to focus on developing the product further. The platform allows users to set up a dashboard of logs, save prompt templates, and analyze the performance of different prompts. It caters to both indie developers and teams, with features specifically designed for non-technical stakeholders to collaborate with engineers.
+
+The journey of PromptLayer has been eventful since its launch in January. They have released several feature updates and have raised funding from investors to support their growth. They are currently in the process of hiring a founding engineer to join their team. In the next six to twelve months, they plan to focus on improving the product for both hackers and teams, with a particular emphasis on building workflows for prompt engineering.
+
+The AI space is constantly evolving, and Zonnerak acknowledges that it can be overwhelming to keep up with all the news and developments. However, he emphasizes the importance of staying rooted in the needs and feedback of current users. PromptLayer aims to prioritize features based on user demand rather than getting caught up in the noise of the AI industry.
+
+Prompt engineering is still a relatively new field, and Zonnerak believes that it may not become a specific job title in the future. Instead, it is a skill set that can be developed by anyone who is willing to tinker and experiment with prompts. He sees prompt engineering as a continuous process of tweaking and refining prompts to achieve desired outputs. While there are guidelines and best practices, Zonnerak believes that ultimately, it is about understanding the black box of language models and finding what works best for each specific task.
+
+Before using PromptLayer, teams often relied on tools like Google Docs, Airtable, or Postgres to manage their prompts. However, PromptLayer aims to streamline the prompt iteration process by providing a dedicated platform for teams to collaborate on prompts. They separate the development phase from the production phase, allowing engineers to test and refine prompts locally before deploying them live. They are also working on adding A/B testing capabilities to enable teams to compare different prompts and models in production.
+
+The future of prompting is a topic of debate in the AI community. Some believe that prompts will always be necessary to guide language models, while others argue that as models become more intelligent, prompts may become obsolete. Zonnerak takes a middle ground, stating that even the most advanced language models will still require a starting point and a task to perform. He believes that there will always be different starting points and models with varying latency and cost requirements. Prompt engineering will continue to play a crucial role in optimizing language model performance.
+
+When it comes to learning prompt engineering, Zonnerak recommends playing around with the OpenAI Playground and reading the OpenAI documentation. He also suggests exploring the work of Nissim Taleb, particularly his books "Antifragile" and "Skin in the Game." Zonnerak believes that practice and experimentation are key to developing prompt engineering skills.
+
+In terms of the future of PromptLayer, Zonnerak plans to focus on making the product better for both hackers and teams. They are working on features like benchmarking prompts and improving workflows for prompt iteration. They also aim to add support for other language models like Anthropic. Zonnerak acknowledges that the AI industry moves fast, but he believes that PromptLayer can keep up by staying focused on user needs and continuously improving their product.
+
+Overall, PromptLayer is a platform that aims to simplify and optimize the process of prompt engineering for language models. It provides a collaborative environment for teams to experiment with prompts, track their performance, and iterate on them. With its focus on user feedback and continuous improvement, PromptLayer is poised to play a significant role in the future of prompt management and collaboration.

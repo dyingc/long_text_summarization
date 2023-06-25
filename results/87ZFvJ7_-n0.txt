@@ -1,0 +1,31 @@
+简要概述：
+本文讨论了使用YAML（YAML Ain't Markup Language）以整洁的格式定义和设计API。YAML是一种人类可读的数据序列化语言，通常用于配置文件和语言之间的数据交换。本文解释了如何使用YAML来定义Open API规范，这是构建和记录RESTful API的标准。
+
+亮点：
+- 📝 YAML是一种人类可读的数据序列化语言，用于定义和设计API。
+- 📝 Open API规范是构建和记录RESTful API的标准。
+- 📝 使用Swagger Editor可以创建Open API规范文档。
+- 📝 本文提供了使用YAML定义Open API规范文档的逐步指南。
+- 📝 本文强调了使用正确格式定义Open API规范的重要性。
+- 📝 本文提供了如何使用YAML定义简单API的示例。
+
+### Detailed Summary
+The article discusses the use of YAML (YAML Ain't Markup Language) to define and design APIs in a neat format. YAML is a human-readable data serialization language that is commonly used for configuration files and data exchange between languages. The article explains how YAML is used to define an Open API specification, which is a standard for building and documenting RESTful APIs. 
+
+The article emphasizes the importance of creating an open API specification document whenever you want to design an API and share it across your teams or other third-party teams. The Open API specification is gaining immense interest in recent times because it simplifies the understanding of APIs for all stakeholders. To create an open API specification document, the article uses Swagger Editor, a popular editor. 
+
+The article provides a step-by-step guide on how to use YAML to define an open API specification document. It explains the importance of creating an open API specification document and how it simplifies the understanding of APIs for all stakeholders. The article uses a sample CMS system to demonstrate how to create an open API specification document using YAML. 
+
+The article explains that the first key-value pair to create is the open API version that we are targeting. In this document, the version targeted is 3.0.3. The article also explains that the open API specification requires certain mandatory parameters, and it continuously validates the input given to give corresponding warnings and errors. 
+
+The article then explains how to create a mapping called info, which contains multiple key-value pairs. The first key-value pair is the title, which is the open API specification for CMS. The second key-value pair is the version, which is 1.2. The article explains that the open API specification expects the version key to be a string, and to show 1.2 as a string, you can use a single quote or wrap it with double quotes. 
+
+The article discusses the use of YAML in defining the Open API specification, which is used to define web APIs. The Open API specification supports a field called servers, which is used to define a list of servers available for the API. The servers section is considered a collection in YAML, and to represent a collection in YAML, a dash followed by the list of values is used. The article explains how to define a URL for a web service and how to make the port configurable using variables. 
+
+The article emphasizes the importance of using the correct format when defining the Open API specification. It explains that the format should be consistent with the Open API structure, and that the key-value pairs, collections, and usage of strings should be carefully considered. The article also explains how to use single quotes or double quotes to represent values, and how to use tags to force a value to be considered as a string.
+
+The article then provides an example of how to define a simple API using YAML structures. The example shows how easy it is for humans or developers to understand the structure of the API by just looking at the YAML structures. The article explains how the use of indentation in YAML structures makes it easier to understand the structure of the API. 
+
+The article concludes by showing the representation of the Open API specification in a YAML viewer. The viewer shows multiple keys defined, such as open API, info, external docs, servers, tags, and paths. Within each of these keys, there are multiple key-value pairs, representing a complex type. The article emphasizes that YAML can be used to define more complex APIs with multiple endpoints and resources. 
+
+In summary, the article provides a detailed explanation of how to use YAML in defining the Open API specification. It covers the use of collections, variables, tags, and paths, and provides examples of how to define each of these elements. The article emphasizes the importance of using the correct format and provides tips on how to avoid errors. Overall, the article is a useful resource for anyone who wants to learn how to use YAML in defining the Open API specification.

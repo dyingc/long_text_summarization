@@ -1,0 +1,26 @@
+#### 简短概要
+这篇文章介绍了散度积分定理，也被称为高斯定理。它是矢量微积分中的一个基本概念，将矢量场在一个体积内的行为与通过该体积边界的通量联系起来。这个定理在电磁学的研究中尤为重要，用于分析电场和磁场的行为。
+
+#### 要点
+- 🧲 散度积分定理是矢量场在体积内源和汇的总和等于通过该体积边界的通量。
+- 🧲 定理中的表达式中，矢量场F可以是电场或磁场，它有三个分量，并与一个无穷小的面元dA相乘。
+- 🧲 矢量场与dA元素的点积表示标量积，它选择与dA元素平行的矢量场部分，消除了与其垂直的部分。
+- 🧲 左边的V表示由表面A围成的体积，dV元素是所考虑体积的无穷小体积部分。
+- 🧲 散度积分定理为分析矢量场的行为提供了强大的工具，广泛应用于物理学的各个领域，特别是电磁学。
+
+### Detailed Summary
+The divergence integral theorem, also known as Gauss's theorem, is a fundamental concept in vector calculus that relates the behavior of a vector field within a volume to its flux through the surface enclosing that volume. This theorem is particularly important in the study of electromagnetism, where it is used to analyze the behavior of electric and magnetic fields.
+
+The theorem can be expressed as an equation, with the left-hand side representing the sum of the sources and sinks of the vector field within a volume, and the right-hand side representing the total flux of the vector field through the surface of that volume. The surface, denoted as "A," must be closed, meaning it does not contain any holes.
+
+In the equation, "F" represents the vector field, which can be either the electric field or the magnetic field in the context of Maxwell's equations. The vector field has three components, and it is multiplied by an infinitesimal surface element, denoted as "dA." This element represents an infinitely small piece of the surface, with its magnitude indicating the area of that piece. The "dA" element is orthogonal to the surface and points out of it.
+
+The dot product between the vector field and the "dA" element represents the scalar product, which is a way to multiply two vectors. In this case, it picks out the part of the vector field that is parallel to the "dA" element, while eliminating the part that is orthogonal to it. The scalar products for all locations on the surface are then added up, which is the task of the integral. This integral is known as the surface integral and measures the flux of the vector field through the surface.
+
+On the left-hand side of the equation, "V" represents the volume enclosed by the surface "A." The "dV" element is an infinitesimal volume piece of the considered volume. The nabla operator, denoted as an upside-down triangle, is applied to the vector field by taking the scalar product between the operator and the vector field. This scalar product is known as the divergence of the vector field and yields a scalar result.
+
+The divergence represents the sources and sinks of the vector field at each location within the volume. If the divergence is positive, there is a source of the vector field at that location. If it is negative, there is a sink. If the divergence is zero, there are no sources or sinks. The divergence is summed up at each location within the volume using the integral, which is known as the volume integral.
+
+The divergence integral theorem states that the sum of the sources and sinks of a vector field within a volume is equal to the flux of the vector field through the surface of that volume. This theorem provides a powerful tool for analyzing the behavior of vector fields and is widely used in various fields of physics, particularly in electromagnetism.
+
+In summary, the divergence integral theorem relates the behavior of a vector field within a volume to its flux through the surface enclosing that volume. It involves the concept of sources and sinks, as well as the divergence of the vector field. The theorem provides a mathematical framework for understanding the flow of vector fields and is essential in the study of electromagnetism.

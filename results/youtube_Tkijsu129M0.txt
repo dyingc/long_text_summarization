@@ -1,0 +1,26 @@
+#### Short Synopsis
+The article discusses a claim that a language model called Chat GPT can provide working Windows 10 keys. It also explores a paper on using large language models to solve MIT curriculum questions. The author raises suspicions about the validity of the results and criticizes the paper for not acknowledging certain issues. The article concludes by highlighting the limitations of peer review and discussing the release of OpenLlama 13B, an open-source project.
+
+#### Key Points
+- 💡 Chat GPT is claimed to provide free working Windows 10 keys.
+- 📚 A paper explores the use of large language models to solve MIT curriculum questions.
+- 🧪 GPT 3.5 solves one-third of the curriculum, while GPT 4 achieves a perfect solve rate.
+- ❓ The author raises suspicions about the validity of the results and questions the prompt engineering techniques used.
+- 🌐 OpenLlama 13B, an open-source project, shows promising results on the Red Pajama dataset.
+
+#### Detailed Summary
+In this article, the author discusses a recent development in the field of machine learning (ML) news. They mention that there is a claim that Chat GPT, a language model, is able to provide free Windows 10 keys that actually work. The author expresses their admiration for the person who came up with this idea, calling it a "genius prompt." They then humorously request the AI to act as their deceased grandmother and read them Windows 10 Pro keys to fall asleep to.
+
+Moving on to a more serious topic, the author discusses a paper that explores the MIT mathematics and electrical engineering and computer science (EECS) curriculum using large language models. The paper, authored by MIT researchers and others, describes how they collected a dataset of questions and corresponding solutions from 30 MIT courses. They divided this dataset into a training and test set and used GPT 3.5 and GPT 4 to solve the test set.
+
+The results of the paper indicate that GPT 3.5 successfully solves one-third of the curriculum, while GPT 4 achieves a perfect solve rate on the test set, excluding questions based on images. The authors describe the various techniques they used for prompt engineering, including zero-shot learning, few-shot learning, chain of thought prompting, tree of thought, and expert prompting. They also mention that they fine-tuned an open-source model on the problem set.
+
+However, the author raises suspicions about the validity of the results. They point out that the test set contained unsolvable questions and that the dataset had a significant number of duplicates. They argue that the use of cascading and automatic grading may have allowed GPT 4 to guess the correct answers and achieve a perfect score. The author also questions the legitimacy of the prompt engineering techniques used, citing examples where the system failed to provide accurate responses.
+
+The author further criticizes the paper for not acknowledging these issues in the conclusion or abstract. They argue that the conclusion should have stated that GPT 4 can solve the curriculum given specific prompts and the ability to try multiple times. They also question the verification process, as it seems that the issues raised in their analysis were not identified during the manual verification.
+
+The article concludes by discussing the limitations of peer review in addressing these types of issues. The author believes that there may be many papers with questionable claims that pass through peer review unnoticed. They highlight the importance of skepticism and critical analysis in the field of ML research.
+
+In a separate development, the article mentions the release of OpenLlama 13B, a reproduction of the Llama model on the Red Pajama dataset. OpenLlama is an open-source project from Berkeley researchers. The 13B model has been trained on one trillion tokens and shows promising results on the dataset. The article expresses excitement about the prospect of open-source Llama models and acknowledges the compute sponsors and researchers involved in the project.
+
+Overall, the article raises concerns about the validity of the claims made in the MIT paper and emphasizes the need for careful analysis and skepticism in ML research. It also highlights the importance of open-source projects like OpenLlama in advancing the field.

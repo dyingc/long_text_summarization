@@ -1,0 +1,29 @@
+#### Title (2 words)
+Diffusion Models
+
+#### Short Synopsis (26 words)
+Diffusion models use neural networks to generate new sprites that are not in the training data set by adding noise to images and progressively removing it.
+
+#### Key Points (88 words)
+- Diffusion models use neural networks to generate new sprites.
+- Noise is added to images to emphasize finer details or general outlines.
+- The concept of adding noise is inspired by the diffusion of ink in water.
+- The neural network is trained to make judgments about the image at different levels of noise.
+- Training involves teaching the network to remove the added noise.
+- The 'No Idea' level of noise is normally distributed.
+- The network can generate sprites beyond the original training data set.
+
+#### Detailed Summary (447 words)
+The goal of diffusion models is to generate more sprites that are not represented in the training data set. This is achieved by using a neural network that can generate new sprites through a process called diffusion modeling. To make the training data useful to the neural network, different levels of noise are added to the images. This noise serves to emphasize finer details or general outlines of the sprites.
+
+The concept of adding noise to the images is inspired by physics, specifically the diffusion of ink in water. Just as an ink drop diffuses into the water until it disappears, the noise added to the images gradually obscures the original sprite until it becomes unrecognizable. At each level of noise, the neural network is trained to make certain judgments about the image.
+
+When the image is still clearly recognizable as the original sprite, the neural network should identify it as such. As more noise is added and the image becomes less clear, the neural network should suggest possible details to make it look like the original sprite. Finally, when the image is just an outline or appears as nothing recognizable, the neural network should still try to make it look more like a sprite by proposing an outline of what a sprite might look like.
+
+The process of adding noise progressively to the images is demonstrated through an animation of an ink drop diffusing in water. This visual representation helps to illustrate the concept of diffusion modeling and how the noise gradually obscures the original sprite.
+
+Training the neural network involves teaching it to remove the noise that was added to the images. The network learns to take different noisy images and transform them back into sprites. Starting from a level of pure noise where there is no recognizable image, the network gradually removes the noise and produces an image that resembles the original sprite.
+
+It is important to note that the "No Idea" level of noise is significant because it is normally distributed. This means that each pixel in the image is sampled from a normal distribution, also known as a Gaussian distribution or a bell-shaped curve. This distribution allows for the generation of new sprites by sampling noise from the normal distribution and using the neural network to remove the noise progressively.
+
+By training the neural network to remove noise and generate new sprites, the goal of diffusion models is achieved. The network can generate sprites that go beyond the ones in the original training data set. This opens up possibilities for creating a larger variety of sprites and expanding the dataset. The next video in the series will cover the topic of sampling.
